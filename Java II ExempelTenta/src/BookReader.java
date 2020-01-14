@@ -81,8 +81,8 @@ public class BookReader extends JFrame {
 			d.setSize(300, 300);
 			d.setLocationRelativeTo(null);
 			JTextArea ta = new JTextArea();
-			d.add(ta);
-			
+			ta.setEditable(false);
+			d.add(ta);			
 			for (Chapter c : foundChapters) {
 				ta.append(c.getChapterNumber() + "\t" + c.getChapterHeading() + "\n");
 			}
